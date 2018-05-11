@@ -1,7 +1,220 @@
-<!DOCTYPE html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+    <head>
+        <title>Bootstrap 3</title>
+        <meta name="viewport" content = "width=device-width, initial-scale=1.0">
+        <link href = "css/bootstrap.min.css" rel = "stylesheet">
+        <link href = "css/Styles.css" rel = "stylesheet">
+    </head>
+    <body>
+        <div class = "navbar navbar-inverse navbar-static-top">
+            <div class = "container">
+                <a href = "#disqusthread" class = "navbar-brand">Ashwath's PC Guides</a>
+                <button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse"> 
+                <span class = "icon-bar"></span>
+                <span class = "icon-bar"></span>
+                <span class = "icon-bar"></span>
+                </button>
+                <div class = "collapse navbar-collapse navHeaderCollapse">
+                    <ul class = "nav navbar-nav navbar-right">
+                       <li class = "active"><a href = "#"><span class = "glyphicon glyphicon-home"></span></a></li> 
+                       <li class = "dropdown">
+                           <a href = "disqusthread" class = "dropdown-toggle" data-hover = "dropdown">Processor <b class = "caret"></b></a>
+                           <ul class = "dropdown-menu">
+                               <li><a href = "#">AMD FX Series</a></li>
+                               <li><a href = "#">AMD Athlon Series</a></li>
+                               <li><a href = "Read.html">Intel vs AMD</a></li>
+                               <li><a href = "#">Intel i3 Series</a></li>
+                               <li><a href = "#">Intel i5 Series</a></li>
+                               <li><a href = "#">Intel i7 Series</a></li>   
+                           </ul>
+                       </li> 
+                       <li class = "dropdown">
+                           <a href = "#" class = "dropdown-toggle" data-hover = "dropdown">Motherboard <b class = "caret"></b></a>
+                           <ul class = "dropdown-menu">
+                               <li><a href = "#">Types</a></li>
+                               <li><a href = "#">Manufacturers</a></li>
+                               <li><a href = "Read3.html">Optional</a></li>
+                           </ul>
+                       </li>
+                       <li class = "dropdown">
+                           <a href = "#" class = "dropdown-toggle" data-hover = "dropdown">RAM/Memory <b class = "caret"></b></a>
+                           <ul class = "dropdown-menu">
+                               <li><a href = "#">What is RAM</a></li>
+                               <li><a href = "#">How Much Do You Need</a></li>
+                               <li><a href = "#">Manufacturers</a></li>
+                           </ul>
+                       </li>
+                       <li class = "dropdown">
+                           <a href = "#" class = "dropdown-toggle" data-hover = "dropdown">Graphics Processor <b class = "caret"></b></a>
+                           <ul class = "dropdown-menu">
+                               <li><a href = "#">Nvidia GTX Series</a></li>
+                               <li><a href = "Read2.html">Nvidia vs AMD</a></li>
+                               <li><a href = "#">AMD Radeon HD Series</a></li>
+                               <li><a href = "#">AMD Radeon R-Series</a></li>
+                           </ul>
+                       </li>
+                       <li><a href = "Read4.html">Peripherals Guide</a></li>
+                       <li><a href = "#contact" data-toggle = "modal">Contact</a></li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+        <ol class = "breadcrumb">
+            <li><a href = "index.html">Ashwath's PC Guides</a></li>
+        </ol>
+        <div class = "container">
+        
+            <div class = "jumbotron text-center">
+                <div id = "myCarousel" class = "carousel slide">
+                    <ol class = "carousel-indicators">
+                        <li data-target = "#myCarousel" data-slide-to = "0" class = "active"></li>
+                        <li data-target = "#myCarousel" data-slide-to = "1"></li>
+                        <li data-target = "#myCarousel" data-slide-to = "2"></li>
+                        <li data-target = "#myCarousel" data-slide-to = "3"></li>
+                        <li data-target = "#myCarousel" data-slide-to = "4"></li>
+                        <li data-target = "#myCarousel" data-slide-to = "5"></li>
+                        <li data-target = "#myCarousel" data-slide-to = "6"></li>
+                    </ol>
+                    
+                    <div class = "carousel-inner">
+                        <div class = "item active">
+                            <img src = "http://i.ytimg.com/vi/lnvcBCdwRqo/maxresdefault.jpg" alt = "digitalStormImage" class = "img-responsive">
+                        </div>
+                        <div class = "item">
+                            <img src = "https://images0.vessel-static.com/?v=6&a=5081155676298558/cec56d5cf96844b6a5fd4846e4d0410b.jpg" alt = "digitalStormImage" class = "img-responsive">
+                        </div>
+                        <div class = "item">
+                            <img src = "http://www.performancepsu.com/wp-content/uploads/2014/04/budget-water-cooling-setup.jpg" alt = "digitalStormImage" class = "img-responsive">
+                        </div>
+                        <div class = "item">
+                            <img src = "http://i.ytimg.com/vi/ESqEgf3jRks/maxresdefault.jpg" alt = "digitalStormImage" class = "img-responsive">
+                        </div>
+                        <div class = "item">
+                            <img src = "http://i.ytimg.com/vi/ulngSlaPxCU/maxresdefault.jpg" alt = "digitalStormImage" class = "img-responsive">
+                        </div>
+                        <div class = "item">
+                            <img src = "http://i.ytimg.com/vi/LzR9r_HRp2Y/maxresdefault.jpg" alt = "digitalStormImage" class = "img-responsive">
+                        </div>
+                        <div class = "item">
+                            <img src = "http://i.ytimg.com/vi/Sx-vW2uRsEE/maxresdefault.jpg" alt = "digitalStormImage" class = "img-responsive">
+                        </div>
+                    </div>
+                    <a class = "carousel-control left" href = "#myCarousel" data-slide = "prev"><span class = "icon-prev"></span></a>
+                    <a class = "carousel-control right" href = "#myCarousel" data-slide = "next"><span class = "icon-next"></span></a>
+                </div>
+                <h1>How to Choose System Components</h1>
+                <p>This website will help you choose the best components for your PC within any budget range. </p>
+                <a class = "btn btn-default">My Channel</a>
+                <a class = "btn btn-info">My Website</a>
+            </div>
+            
+        </div>
+        
+        <div class = "container">
+        <div class = "alert alert-success alert-dismissable">
+        <button type = "button" class = "close" data-dismiss = "alert">&times;</button></button>Alert</div>
+            <div class = "row">
+                <div class = "col-md-3">
+                    <h3><a href = "Read.html">Intel vs AMD</a></h3>
+                    <p>Everything you need to know on whether to choose Team Blue or Team Red for your next gaming rig. This guide wil teach you the pros and cons of both, so that you are never uninformed for your next build. </p>
+                    <a href = "Read.html" class = "btn btn-info">Read More</a>
+                </div>
+                <div class = "col-md-3">
+                    <h3><a href = "#">Peripherals Guide</a></h3>
+                    <p>Peripherals never get any love when people talk about building PC's. But of course, they are necessary. This guide will tell you what peripherals are right for you and your budget. </p>
+                    <a href = "Read4.html" class = "btn btn-info">Read More</a>
+                </div>
+                <div class = "col-md-3">
+                    <h3><a href = "Read2.html">AMD vs Nvidia</a></h3>
+                    <p>The GPU (or graphics processing unit) can be the hardest choice in your system, and also the most expensive. This guide will help you see which graphics card manufacturer has the best "bang for the buck" performance in every price range, to fit your needs. </p>
+                    <a href = "Read2.html" class = "btn btn-info">Read More</a>
+                </div>
+                <div class = "col-md-3">
+                    <h3><a href = "#">How to Build Your System</a></h3>
+                    <p>Once you have selected your components, you are not done. You still have to actually build the computer. This guide shows you how, with easy, step by step instructions. </p>
+                    <a href = "#" class = "btn btn-info">Read More</a>
+                </div>
+            </div>
+        </div>
+        
+      <div id="disqus_thread"></div>
+            <script type="text/javascript">
+                /* * * CONFIGURATION VARIABLES * * */
+                var disqus_shortname = 'bootstraptechsite';
+                
+                /* * * DON'T EDIT BELOW THIS LINE * * */
+                (function() {
+                    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+                    
+        <div class = "navbar navbar-inverse navbar-fixed-bottom">
+            
+            <div class = "container">
+                <p class = "navbar-text pull-left">Site Built By Ashwath</p>
+                <a href = "http://pcpartpicker.com" target = "blank" class = "navbar-btn btn-info btn pull-right">PcPartPicker</a>
+            </div>
+            
+        </div>
+    <div class = "modal fade" id = "contact" role = "dialog">
+            <div class = "modal-dialog">
+                <div class = "modal-content">
+                    <form class = "form-horizontal">
+                        <div class = "modal-header">
+                            <h4>Contact Me!</h4>
+                        </div>
+                        <div class = "modal-body">
+                            <div class = "form-group">
+                                <label for = "contact-name" class = "col-lg-2 control-label">Name</label>
+                                <div class = "col-lg-10">
+                                    <input type = "text" class = "form-control" id = "contact-name" placeholder = "Full Name">
+                                </div>
+                            </div>
+                            <div class = "form-group">
+                                <label for = "contact-email" class = "col-lg-2 control-label">Email</label>
+                                <div class = "col-lg-10">
+                                    <input type = "email" class = "form-control" id = "contact-email" placeholder = "Email Address">
+                                </div>
+                            </div>
+                            <div class = "form-group">
+                                <label for = "contact-message" class = "col-lg-2 control-label">Message</label>
+                                <div class = "col-lg-10">
+                                    <textarea class = "form-control" rows = "8"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class = "modal-footer">
+                            <a class = "btn btn-info" data-dismiss = "modal">Close</a>
+                            <a class = "btn btn-info" href = "#">Submit</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES * * */
+            var disqus_shortname = 'bootstraptechsite';
+            
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function () {
+                var s = document.createElement('script'); s.async = true;
+                s.type = 'text/javascript';
+                s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+                (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+            }());
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src = "js/dropdown-on-hover.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script>
+            $(function (){
+              $(".jumbotron").hide(1).delay(1000).fadeIn(3000);
+              $(".navbar").hide(1).delay(1000).fadeIn(1000);
+              $(".container").hide(1).delay(1000).fadeIn(2000);
+            });
+        </script>
+    </body>   
 </html>
