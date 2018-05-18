@@ -1,0 +1,88 @@
+<html>
+  <head>
+    <title>Ashwath Krishnan</title>
+    <meta name="viewport" content = "width=device-width, initial-scale=1.0">
+    <link href = "css/bootstrap.min.css" rel = "stylesheet">
+    <link href = "css/Styles.css" rel = "stylesheet">
+  </head>
+  <body>
+
+    <div class = "navbar navbar-inverse navbar-static-top">
+        <div class = "container">
+            <a href = "index.html" class = "navbar-brand">Ashwath Krishnan</a>
+            <button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+            <span class = "icon-bar"></span>
+            <span class = "icon-bar"></span>
+            <span class = "icon-bar"></span>
+            </button>
+            <div class = "collapse navbar-collapse navHeaderCollapse">
+                <ul class = "nav navbar-nav navbar-right">
+                   <li class = "active"><a href = "#"><span class = "glyphicon glyphicon-home"></span></a></li>
+                   <li><a href = "#">About Me</a></li>
+                   <li class = "dropdown">
+                       <a href = "#" class = "dropdown-toggle" data-hover = "dropdown">Interests<b class = "caret"></b></a>
+                       <ul class = "dropdown-menu">
+                           <li><a href = "Piano.html">Piano</a></li>
+                           <li><a href = "#">Music</a></li>
+                           <li><a href = "#">Technology</a></li>
+                           <li><a href = "#">Video Games</a></li>
+                       </ul>
+                   </li>
+                   <li><a href = "#">Projects</a></li>
+                   <li><a href = "#contact" data-toggle = "modal">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class = "navbar navbar-inverse navbar-fixed-bottom">
+
+        <div class = "container">
+            <p class = "navbar-text pull-left">Site Built By Ashwath Krishnan</p>
+            <a href = "https://twitter.com/ashwathbkrishna" target = "blank" class = "navbar-btn btn-info btn pull-right" >Twitter</a>
+            <a href = "https://github.com/SphinxNumberNine" target = "blank" class = "navbar-btn btn-default btn pull-right">Github</a>
+        </div>
+
+    </div>
+
+    <div class = "modal fade" id = "contact" role = "dialog">
+            <div class = "modal-dialog">
+                <div class = "modal-content">
+                    <form class = "form-horizontal">
+                        <div class = "modal-header">
+                            <h4>Contact Me!</h4>
+                        </div>
+                        <div class = "modal-body">
+                            <div class = "form-group">
+                                <label for = "contact-name" class = "col-lg-2 control-label">Name</label>
+                                <div class = "col-lg-10">
+                                    <input type = "text" class = "form-control" id = "contact-name" placeholder = "Full Name">
+                                </div>
+                            </div>
+                            <div class = "form-group">
+                                <label for = "contact-email" class = "col-lg-2 control-label">Email</label>
+                                <div class = "col-lg-10">
+                                    <input type = "email" class = "form-control" id = "contact-email" placeholder = "Email Address">
+                                </div>
+                            </div>
+                            <div class = "form-group">
+                                <label for = "contact-message" class = "col-lg-2 control-label">Message</label>
+                                <div class = "col-lg-10">
+                                    <textarea class = "form-control" rows = "8"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class = "modal-footer">
+                            <a class = "btn btn-info" data-dismiss = "modal">Close</a>
+                            <a class = "btn btn-info" href = "#">Submit</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src = "js/dropdown-on-hover.js"></script>
+        <script src="js/bootstrap.js"></script>
+  </body>
+</html>
