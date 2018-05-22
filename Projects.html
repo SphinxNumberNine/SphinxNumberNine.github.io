@@ -1,0 +1,119 @@
+<html>
+  <head>
+    <title>Ashwath Krishnan</title>
+    <meta name="viewport" content = "width=device-width, initial-scale=1.0">
+    <link href = "css/bootstrap.min.css" rel = "stylesheet">
+    <link href = "css/Styles.css" rel = "stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <div class = "navbar navbar-inverse navbar-static-top">
+        <div class = "container">
+            <a href = "index.html" class = "navbar-brand">Ashwath Krishnan</a>
+            <button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+            <span class = "icon-bar"></span>
+            <span class = "icon-bar"></span>
+            <span class = "icon-bar"></span>
+            </button>
+            <div class = "collapse navbar-collapse navHeaderCollapse">
+                <ul class = "nav navbar-nav navbar-right">
+                   <li class = "active"><a href = "index.html"><span class = "glyphicon glyphicon-home"></span></a></li>
+                   <li><a href = "AboutMe.html">About Me</a></li>
+                   <li class = "dropdown">
+                       <a href = "#" class = "dropdown-toggle" data-hover = "dropdown">Interests<b class = "caret"></b></a>
+                       <ul class = "dropdown-menu">
+                           <li><a href = "Piano.html">Piano</a></li>
+                           <li><a href = "Technology.html">Technology</a></li>
+                           <li><a href = "VideoGames.html">Video Games</a></li>
+                       </ul>
+                   </li>
+                   <li><a href = "#">Projects</a></li>
+                   <li><a href = "#contact" data-toggle = "modal">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-lg-12">
+                <div class = "panel panel-default">
+                    <div class = "panel-body">
+                        <div class = "page-header">
+                            <h3>Projects</h3>
+                        </div>
+                        <h4>I've done some stuff.</h4>
+                        <p>Below are some of the notable things I've made or worked on. The source code for all the coding projects can be found on my github, linked at the bottom of this site.</p>
+                        <br>
+                        <h5>ExchangeBrowse </h5>
+                        <p>This C# based application was made during my internship at Commvault Systems in Tinton Falls, NJ. The application grabs archived mail data from an Appache Solr index, and displays the data in a browse view, with tabs for subject, from, to, cc, and some other archived fields. In addition, the application uses an authentication which allows authenticated users to modify the data and send the data back to the Solr index. The application support's Solr's atomic update feature, as well as support for batch updates. The project took 2 full summers, working 9-5 every weekday, to complete. </p>
+                        <br>
+                        <h5>Command Genie</h5>
+                        <p>This C# based application has 2 parts: the application, and the addin required for the application to run. The application is a Windows Daemon application that scans for incoming mail to a configured email address. If the subject of the incoming mail is "EXECUTE COMMAND", the body of the mail is then scanned. The body of the mail can contain commands to execute on the machine's command line. The command(s) are executed, and the response is sent back in an email response to the user that sent the command email. If the response is longer than a configurable length, the response is written to a text file and sent back to the user as an attachment. The addin is a daemon that actually looks for the email, and changes a registry value when it finds a command email. This registry change then triggers the actual application.</p>
+                        <br>
+                        <h5>Third Person Battle Royale Game</h5>
+                        <p>Worked with a <a href = "venkatesan.io">friend</a> on a multiplayer third person shooter for our Virtual Reality and Game Design course. The project was made using Unity Engine and C# scripting. My contributions included level design, networking, UI / HUD, and player movement / animations. All of the assets used in the project were purchased or downloaded legally. We are still adding things to this project, as well.</p>
+                        <br>
+                        <h5>CS:GO Stat Graphing Tool</h5>
+                        <p>This C# based Windows Application that uses Steam's API and the graphing API OxyPlot to display a CSGO player's ingame weapon usage stats, given their steam ID. There is also an option to compare a user's weapon stats with a friend's weapons stats.</p>
+
+                    </div><!---panel-body--->
+                </div><!---panel-default--->
+            </div><!---col-lg-12--->
+        </div>
+    </div>
+
+    <div class = "navbar navbar-inverse navbar-fixed-bottom">
+
+        <div class = "container">
+            <p class = "navbar-text pull-left">Site Built By Ashwath Krishnan</p>
+            <a href = "https://twitter.com/ashwathbkrishna" class = "btn btn-social-icon btn-twitter btn-lg pull-right" ><span class="fab fa-twitter"></span></a>
+            <a href = "https://github.com/SphinxNumberNine" class = "btn btn-social-icon btn-github btn-lg pull-right"><span class="fab fa-github"></span></a>
+            <a href = "https://www.instagram.com/ashwathkrishnan/" class = "btn btn-social-icon btn-instagram btn-lg pull-right"><span class="fab fa-instagram"></span></a>
+            <a href = "https://www.reddit.com/u/SoT-NumberNine" class = "btn btn-social-icon btn-reddit btn-lg pull-right"><span class="fab fa-reddit"></span></a>
+        </div>
+
+    </div>
+
+    <div class = "modal fade" id = "contact" role = "dialog">
+            <div class = "modal-dialog">
+                <div class = "modal-content">
+                    <form class = "form-horizontal">
+                        <div class = "modal-header">
+                            <h4>Contact Me!</h4>
+                        </div>
+                        <div class = "modal-body">
+                            <div class = "form-group">
+                                <label for = "contact-name" class = "col-lg-2 control-label">Name</label>
+                                <div class = "col-lg-10">
+                                    <input type = "text" class = "form-control" id = "contact-name" placeholder = "Full Name">
+                                </div>
+                            </div>
+                            <div class = "form-group">
+                                <label for = "contact-email" class = "col-lg-2 control-label">Email</label>
+                                <div class = "col-lg-10">
+                                    <input type = "email" class = "form-control" id = "contact-email" placeholder = "Email Address">
+                                </div>
+                            </div>
+                            <div class = "form-group">
+                                <label for = "contact-message" class = "col-lg-2 control-label">Message</label>
+                                <div class = "col-lg-10">
+                                    <textarea class = "form-control" rows = "8"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class = "modal-footer">
+                            <a class = "btn btn-info" data-dismiss = "modal">Close</a>
+                            <a class = "btn btn-info" href = "#">Submit</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src = "js/dropdown-on-hover.js"></script>
+        <script src="js/bootstrap.js"></script>
+  </body>
+</html>
